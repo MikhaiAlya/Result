@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+}
+
+
+/* タイトル画面 */
+.top {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ffd700; /* ゴールド */
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+}
+
+
+.button-area {
+    display: flex;
+    gap: 40px;
+}
+
+.date-button {
+    padding: 20px 40px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    background: linear-gradient(180deg, #fff3b0, #ffd700);
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.date-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+
+/* 詳細画面 */
+.detail {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+/* 縦並び */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* 日記と画像の間隔 */
+}
+
+/* ===== 報告書風 日記（薄い黄緑） ===== */
+.diary-note {
+    width: 80vw;
+    max-width: 800px;
+    background: #f3f8e8; /* 薄い黄緑 */
+    padding: 30px 35px;
+    border-radius: 6px;
+    border: 1px solid #b7c8a3;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    color: #222;
+    font-family: "Yu Gothic", "Meiryo", sans-serif;
+}
+
+/* タイトル */
+.diary-note h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+    border-bottom: 2px solid #9fb089;
+    padding-bottom: 8px;
+}
+
+/* 本文 */
+.diary-note p {
+    margin: 0;
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+
+
+
+
+/* タイトル */
+.diary-note h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+/* 本文 */
+.diary-note p {
+    margin: 0;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+
+/* 戻るボタン（右上・大きめ） */
+.back-button {
+    position: absolute;
+    top: 20px;      /* 右上に配置 */
+    right: 20px;
+    padding: 18px 32px;   /* 大きく */
+    font-size: 18px;
+    background: linear-gradient(180deg, #333, #111);
+    color: #ffd700;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid #ffd700;
+    font-weight: bold;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+}
+
+.back-button:hover {
+    background: linear-gradient(180deg, #444, #222);
+}
+
+
+.image-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-row img {
+    max-width: 40vw;
+    max-height: 60vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
